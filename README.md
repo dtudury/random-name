@@ -1,7 +1,6 @@
 # random-name
 
-return random names (weighted by popularity in year 1990 U.S. census data).
-also random cities (weighted by population in year 2012 U.S. census data).
+return random names and cities (weighted by population in U.S. census data).
 
 ``` js
   var random = require('random-name')
@@ -36,8 +35,9 @@ also optionally builds names using markov chains
 Taken from the [U.S. census geneology website](https://www.census.gov/genealogy/www/data/1990surnames/names_files.html)
 and the [U.S. census population estimate](https://www.census.gov/popest/)
 
-The .json files are limited to 500 entries to regenerate the data using more entries
-edit `MAX_COUNT` in original_census_data/build_json.js and re-run the script:
+To make this more browser friendly, the .json files are limited to 500 entries
+
+To regenerate the data using more entries edit `MAX_COUNT` in original_census_data/build_json.js and re-run the script:
 `node original_census_data/build_json.js`
 
 ## License
